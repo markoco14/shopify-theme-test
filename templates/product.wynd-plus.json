@@ -14,11 +14,17 @@
       "type": "product-plus-how-to",
       "settings": {
       }
+    },
+    "usage": {
+      "type": "plus-usage-pics",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "guarantee",
-    "howTo"
+    "howTo",
+    "usage"
   ]
 }
