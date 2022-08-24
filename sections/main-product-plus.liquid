@@ -1,6 +1,7 @@
 <div style="display:flex;">
   <div style="width: 50%;">
     Image on the left
+    <img src="{{ product.featured_image | image_url: '300x'}}"/>
   </div>
   <div style="width: 50%;">
     <h1>{{ product.title }}</h1>
