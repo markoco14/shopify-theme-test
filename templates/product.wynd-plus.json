@@ -54,6 +54,11 @@
       "type": "product-plus-specs",
       "settings": {
       }
+    },
+    "aqis": {
+      "type": "product-plus-aqi-categories",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -62,6 +67,7 @@
     "howTo",
     "usage",
     "16613506248d67d803",
-    "specs"
+    "specs",
+    "aqis"
   ]
 }
