@@ -34,61 +34,67 @@
   </ul>
   <ul>
     <li class="show">
-      <div>
+      <div class="aqi-description">
         <p></p>  
       </div>
       <div>
         <img
+          class="aqi-image"
           src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND_Plus_tracker.jpg?v=1661356024" 
         />
       </div>
     </li>
     <li class="hide">
-      <div>
+      <div class="aqi-description">
         <p></p>  
       </div>
       <div>
         <img
+          class="aqi-image"
           src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND_Plus_tracker-fair.jpg?v=1661356024" 
         />
       </div>
     </li>
     <li class="hide">
-      <div>
+      <div class="aqi-description">
         <p></p>  
       </div>
       <div>
         <img
+          class="aqi-image"
           src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND_Plus_tracker-moderate.jpg?v=1661356023" 
         />
       </div>
     </li>
     <li class="hide">
-      <div>
+      <div class="aqi-description">
         <p></p>  
       </div>
       <div>
         <img
+          class="aqi-image"
           src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND_Plus_tracker-bad.jpg?v=1661356024" 
         />
       </div>
     </li>
     <li class="hide">
-      <div>
+      <div class="aqi-description">
         <p></p>  
       </div>
       <div>
         <img
+          class="aqi-image"
           src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND_Plus_tracker-hazardous.jpg?v=1661356023" 
         />
       </div>
     </li>
     <li class="hide">
-      <div>
+      <div class="aqi-description">
         <p></p>  
       </div>
       <div>
         <img
+          class="aqi-image"
           src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND_Plus_tracker-bad.jpg?v=1661356024" 
         />
       </div>
@@ -120,6 +126,7 @@
     text-align: center;
     margin: 0 auto;
   }
+  
   .good {
     border: 2px solid #33c9d3;
     border-radius: 25px;
@@ -165,6 +172,15 @@
     flex: 1 1 0;
     width: 0;
   }
+
+  .aqi-description {
+    width: 50%;
+  }
+
+  .aqi-image {
+    width: 50%;
+  }
+  
 {% endstylesheet %}
 
 {% javascript %}
