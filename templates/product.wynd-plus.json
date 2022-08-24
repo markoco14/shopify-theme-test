@@ -4,9 +4,15 @@
       "type": "main-product-plus",
       "settings": {
       }
+    },
+    "guarantee": {
+      "type": "product-hassle-free",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "guarantee"
   ]
 }
