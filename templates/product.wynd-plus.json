@@ -9,10 +9,16 @@
       "type": "product-hassle-free",
       "settings": {
       }
+    },
+    "howTo": {
+      "type": "product-plus-how-to",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "guarantee"
+    "guarantee",
+    "howTo"
   ]
 }
