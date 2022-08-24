@@ -1,32 +1,32 @@
 <h2>Hover Over Each AQI Category to Learn More</h2>
 <ul style="display: flex; gap: 1rem;  flex-wrap: wrap; list-style: none; padding: 1rem 0.5rem;">
   <li class="good">
-    <p class="center">
+    <p class="btn-text">
       AQI 0 - 50
     </p>
   </li>
   <li class="moderate">
-    <p class="center">
+    <p class="btn-text">
       AQI 51 - 100
     </p>
   </li>
   <li class="unhealthy-sensitive">
-    <p class="center">
+    <p class="btn-text">
       AQI 101 - 150
     </p>
   </li>
   <li class="unhealthy">
-    <p class="center">
+    <p class="btn-text">
       AQI 151 - 200
     </p>
   </li>
   <li class="very-unhealthy">
-    <p class="center">
+    <p class="btn-text">
       AQI 201 - 300
     </p>
   </li>
   <li class="hazardous">
-    <p class="center">
+    <p class="btn-text">
       AQI 301 - 500
     </p>
   </li>
@@ -40,8 +40,9 @@
 {% endschema %}
 
 {% stylesheet %}
-  .center {
+  .btn-text {
     text-align: center;
+    margin: 0;
   }
   .good {
     border: 2px solid black;
