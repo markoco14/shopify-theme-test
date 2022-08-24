@@ -19,12 +19,43 @@
       "type": "product-plus-usage-pics",
       "settings": {
       }
+    },
+    "16613506248d67d803": {
+      "type": "rich-text",
+      "blocks": {
+        "16613506240d16644e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>We Measure The Bad Stuff In Your Air<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "16613506240d16644e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We spent 18 months developing our own patented particulate matter sensor - the smallest and most accurate commercial particulate sensor in the world.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16613506240d16644e-0",
+        "16613506240d16644e-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "guarantee",
     "howTo",
-    "usage"
+    "usage",
+    "16613506248d67d803"
   ]
 }
