@@ -1,19 +1,19 @@
-<div style="display:flex; width: min(1200px, 90%); margin: auto;">
-  <div style="width: 50%;">
+<div class="main-product-container">
+  <div class="main-product-image">
     <img 
-      style="max-width: 100%;" 
+      width="100%" 
       src="//cdn.shopify.com/s/files/1/1413/8998/products/WYND-Plus_white-3_3000x.jpg?v=1630697210"
     />
-<!--     <img src="{{ product.featured_image | img_url: '600x600'}}"/> -->
   </div>
-  <div style="width: 50%; padding: 0 8rem;">
+  <div class="main-product" style="width: 50%; padding: 0 8rem;">
     <h1>{{ product.title }}</h1>
     <p>⭐⭐⭐⭐⭐</p>
     <p>{{ product.description }}</p>
     <div>
-      <strike>${{ product.compare_at_price }}</strike>
+      <span>${{ product.compare_at_price }}</span>
       <span>${{ product.price }}</span>
     </div>
+    <button class="add-btn">Add to Cart</button>
   </div>
 </div>
 
@@ -23,3 +23,34 @@
     "settings": []
   }
 {% endschema %}
+
+{% stylesheet %}
+  .main-product-container {
+    display: flex;
+    width: min(1200px, 90%);
+    margin: auto;
+  }
+
+  .main-product-image {
+    max-width: 50%;
+  }
+
+  .main-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .add-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #ef787c;
+    color: white;
+    margin: 2rem 0 0;
+  }
+
+  .add-btn:hover {
+    cursor: pointer;
+  }
+{% endstylesheet %}
