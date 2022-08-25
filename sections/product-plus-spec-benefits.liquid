@@ -1,11 +1,56 @@
+<div class="spec-benefit-container">
+  <div class="flex">
+    <div class="block-item">
+      <img src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND-8_hours.png?v=1661407066"/>
+      <p>Lithium-ion battery holds an 8 hour charge</p>
+    </div>
+    <div class="block-item">
+      <img src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND-Rechargeable.png?v=1661407066"/>
+      <p>USB-C charging port 4.5 hours to fully charge</p>
+    </div>
+    <div class="block-item">
+      <img src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND-App.png?v=1661407065"/>
+      <p>Connects via Bluetooth to our free iOS and Android App</p>
+    </div>
+    <div class="block-item">
+      <img src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND-light.png?v=1661407065"/>
+      <p>Lightweight & portable Less than 1 lbs</p>
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
+    "name": "Specs and Benefits",
     "settings": []
   }
 {% endschema %}
 
 {% stylesheet %}
+  .spec-benefit-container {
+    background-color: #255a72;
+    width:100%;
+    padding: 5rem 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+  }
+
+  .flex {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    width: min(1200px, 90%);
+    margin: 0 auto;
+  }
+
+  .block-item {
+    text-align: center;
+    max-width: 200px;
+    color: white;
+  }
 {% endstylesheet %}
 
 {% javascript %}
