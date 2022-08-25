@@ -153,13 +153,16 @@
   }
   
   .good-active {
+    border: 2px solid var(--good);
     background-color: var(--good);
     color: white;
   }
 
   .good:hover {
-    background-color: var(--good);
-    color: white;
+    cursor: pointer;
+  }
+
+  .good-active:hover {
     cursor: pointer;
   }
   
@@ -169,13 +172,16 @@
   }
 
   .moderate-active {
+    border: 2px solid var(--moderate);
     background-color: var(--moderate);
     color: white;
   }
 
   .moderate:hover {
-    background-color: var(--moderate);
-    color: white;
+    cursor: pointer;
+  }
+
+  .moderate-active:hover {
     cursor: pointer;
   }
   
@@ -183,10 +189,18 @@
     border: 2px solid var(--sensitive);
     color: var(--sensitive);
   }
-
-  .sensitive:hover {
+  
+  .sensitive-active {
+    border: 2px solid var(--sensitive);
     background-color: var(--sensitive);
     color: white;
+  }
+
+  .sensitive:hover {
+    cursor: pointer;
+  }
+
+  .sensitive-active:hover {
     cursor: pointer;
   }
   
@@ -194,10 +208,18 @@
     border: 2px solid var(--unhealthy);
     color: var(--unhealthy);
   }
+  
+  .unhealthy-active {
+    border: 2px solid var(--unhealthy);
+    background-color: var(--unhealthy);
+    color: white;
+  }
 
   .unhealthy:hover {
-    background-color: var(--unhealthy);  
-    color: white;
+    cursor: pointer;
+  }
+
+  .unhealthy-active:hover {
     cursor: pointer;
   }
   
@@ -205,10 +227,18 @@
     border: 2px solid var(--very-unhealthy);
     color: var(--very-unhealthy);
   }
-
-  .very-unhealthy:hover {
+  
+  .very-unhealthy-active {
+    border: 2px solid var(--very-unhealthy);
     background-color: var(--very-unhealthy);
     color: white;
+  }
+
+  .very-unhealthy:hover {
+    cursor: pointer;
+  }
+
+  .very-unhealthy-active:hover {
     cursor: pointer;
   }
   
@@ -217,9 +247,17 @@
     color: var(--hazardous);
   }
 
-  .hazardous:hover {
+  .hazardous-active {
+    border: 2px solid var(--hazardous);
     background-color: var(--hazardous);
     color: white;
+  }
+
+  .hazardous:hover {
+    cursor: pointer;
+  }
+  
+  .hazardous-active:hover {
     cursor: pointer;
   }
 
@@ -238,13 +276,45 @@
 {% endstylesheet %}
 
 {% javascript %}
+
+  const inactiveClasses = [
+    ["aqi-btn", "good"], 
+    ["aqi-btn", "moderate"], 
+    ["aqi-btn", "sensitive"], 
+    ["aqi-btn", "unhealthy"],
+    ["aqi-btn", "very-unhealthy"],
+    ["aqi-btn", "hazardous"]
+  ];
+  const activeClasses = [
+    ["aqi-btn", "good-active"], 
+    ["aqi-btn", "moderate-active"], 
+    ["aqi-btn", "sensitive-active"], 
+    ["aqi-btn", "unhealthy-active"],
+    ["aqi-btn", "very-unhealthy-active"],
+    ["aqi-btn", "hazardous-active"]
+  ];
   const aqiButtons = document.querySelectorAll('.aqi-btn');
   const aqiDescriptions = document.querySelectorAll('.aqi-description');
+  
   aqiButtons.forEach((btn, index) => {
     btn.addEventListener('mouseover', () => {
-      
+      aqiButtons.forEach((btn, btnIndex) => {
+        if (btnIndex === index) {
+          console.log(btn);
+          btn.classList.remove(...btn.classList);
+          activeClasses[btnIndex].forEach(className => {
+            btn.classList.add(className);
+          });
+        } else {
+          btn.classList.remove(...btn.classList);
+          inactiveClasses[btnIndex].forEach(className => {
+            btn.classList.add(className);
+          });
+        }
+      });
 
       aqiDescriptions.forEach(description => {
+        description.classList.remove('show');
         description.classList.add('hide');
       });
       aqiDescriptions[index].classList.remove('hide');
