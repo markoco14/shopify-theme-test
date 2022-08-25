@@ -100,13 +100,13 @@
       "settings": {
       }
     },
-    "specs": {
-      "type": "product-plus-spec-benefits",
+    "parallax": {
+      "type": "product-plus-parallax",
       "settings": {
       }
     },
-    "parallax": {
-      "type": "product-plus-parallax",
+    "specs": {
+      "type": "product-plus-spec-benefits",
       "settings": {
       }
     }
@@ -122,7 +122,7 @@
     "1661394550068ebcef",
     "details",
     "subSave",
-    "specs",
-    "parallax"
+    "parallax",
+    "specs"
   ]
 }
