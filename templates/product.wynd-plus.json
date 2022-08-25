@@ -91,8 +91,9 @@
       }
     },
     "details": {
-        "type": "product-plus-filter-details",
-        "settings": {}
+      "type": "product-plus-filter-details",
+      "settings": {
+      }
     }
   },
   "order": [
