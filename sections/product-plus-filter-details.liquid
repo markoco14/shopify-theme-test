@@ -1,3 +1,116 @@
+<div class="filter-section-container">
+  <div class="flex justify-center container">
+    <ul style="list-style: none; max-width: 60%">
+      <li class="filter-video">
+        <video autoplay muted loop style="width:100%;">
+          <source 
+            src="https://cdn.shopify.com/s/files/1/1413/8998/files/Filter_Virus-dust_2.mp4?v=1634007209"
+            type="video/mp4"
+          >
+          Your browser does not support the video tag.
+        </video>
+      </li>
+      <li class="hide filter-video">
+        <video autoplay muted loop style="width:100%;">
+          <source 
+            src="https://cdn.shopify.com/s/files/1/1413/8998/files/Filter_Virus-dust_2.mp4?v=1634007209"
+            type="video/mp4"
+          >
+          Your browser does not support the video tag.
+        </video>
+      </li>
+      <li class="hide filter-video">
+        <video autoplay muted loop style="width:100%;">
+          <source 
+            src="https://cdn.shopify.com/s/files/1/1413/8998/files/Filter_Pollen_1.mp4?v=1634007296"
+            type="video/mp4"
+          >
+          Your browser does not support the video tag.
+        </video>
+      </li>
+      <li class="hide filter-video">
+        <video autoplay muted loop style="width:100%;">
+          <source 
+            src="https://cdn.shopify.com/s/files/1/1413/8998/files/Filter-smoke.mp4?v=1634007658"
+            type="video/mp4"
+          >
+          Your browser does not support the video tag.
+        </video>
+      </li>
+    </ul>
+    <!-- <div class="filter-video">
+      <video autoplay muted loop
+        style="width:100%;"
+      >
+        <source 
+          src="https://cdn.shopify.com/s/files/1/1413/8998/files/Filter_Virus-dust_2.mp4?v=1634007209"
+          type="video/mp4"
+        >
+        Your browser does not support the video tag.
+      </video>
+    </div> -->
+    <div class="filter-container">
+      <ul style="list-style: none; padding: 0;">
+        <li class="filter-tabs">
+          <div>
+            <p 
+              style="background: url(//cdn.shopify.com/s/files/1/1413/8998/files/virus_35x.png?v=1634009510) no-repeat left top"
+              class="filter-btn"
+            >
+            Viruses, Bacteria & Mold</p>
+            <p class="filter-content">Airborne mold spores can exacerbate allergies, 
+              asthma and other respiratory diseases. Our filters 
+              have an embedded layer of silver that kills 99.97% 
+              of bacteria, viruses and mold spores on contact.
+            </p>
+          </div>
+        </li>
+        <li class="filter-tabs">
+          <div>
+            <p
+              style="background: url(//cdn.shopify.com/s/files/1/1413/8998/files/paw_35x.png?v=1634009562) no-repeat left top"
+              class="filter-btn"
+            >
+            Dust & Pet Dander</p>
+            <p class="hide filter-content">Pet dander can stay suspended in the air longer 
+              than dust and more easily sticks to furniture, 
+              bedding and clothing. Our filters trap dust and 
+              pet dander to help reduce pet dander induced 
+              asthma and allergies.
+            </p>
+          </div>
+        </li>
+        <li class="filter-tabs">
+          <div>
+              <p
+                style="background: url(//cdn.shopify.com/s/files/1/1413/8998/files/flower_35x.png?v=1634009602) no-repeat left top"
+                class="filter-btn"
+                >Allergens & Pollen</p>
+              <p class="hide filter-content">Severity of allergies varies from person to 
+                person and can range from minor irritation to 
+                anaphylaxis. Our filters remove allergens so 
+                you can breathe easy during allergy season.
+              </p>
+            </div>
+          </li>
+          <li class="filter-tabs">
+            <div>
+                <p
+                  style="background: url(//cdn.shopify.com/s/files/1/1413/8998/files/smoke_94854b69-319b-48ae-a52e-b6af49d9aac7_35x.png?v=1634009669) no-repeat left top"
+                  class="filter-btn"
+                  >Smog, Smoke & Pollution</p>
+                <p class="hide filter-content">Air pollution, even at low levels, has an 
+                  impact on human health. Our filters remove 
+                  fine particulate matter to help reduce your 
+              risk of pollution related health issues.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
     "name": "Filter Details",
@@ -6,7 +119,74 @@
 {% endschema %}
 
 {% stylesheet %}
+
+  .container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .filter-section-container {
+    background-color: #f3f3f3; 
+    padding: 3rem 0
+  }
+
+  .filter-video {
+    max-width: 100%;
+  }
+
+  .filter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40%;
+  }
+
+  .filter-tabs {
+    border-bottom: 1px solid #666;
+    margin-bottom: 2.5rem; 
+    cursor: pointer;
+  }
+
+  .filter-btn {
+    padding-left: 4.5rem!important; 
+    font-size:2rem;
+    height: 35px;
+    font-weight:500;
+  }
+
+  .filter-content {
+    padding-left: 4.5rem!important;
+    max-width: 60ch;
+  }
+
 {% endstylesheet %}
 
 {% javascript %}
+  const filterTabs = document.querySelectorAll('.filter-tabs');
+  const filterVideos = document.querySelectorAll('.filter-video');
+  filterTabs.forEach((tab, index) => {
+    tab.addEventListener('click', (e) => {
+      filterTabs.forEach((tab, tabIndex) => {
+        if (index === tabIndex && !tab.lastElementChild.lastElementChild.classList.contains('hide')) {
+          return;
+        }
+        if (!tab.lastElementChild.lastElementChild.classList.contains('hide')) {
+          tab.lastElementChild.lastElementChild.classList.add('hide');
+          filterVideos[tabIndex].classList.add('hide');
+        }
+        if (index === tabIndex) {
+          tab.lastElementChild.lastElementChild.classList.remove('hide');
+          filterVideos[tabIndex].classList.remove('hide');
+        }
+     })
+    })
+  });
 {% endjavascript %}

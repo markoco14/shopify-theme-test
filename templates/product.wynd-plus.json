@@ -89,6 +89,10 @@
         "padding_top": 40,
         "padding_bottom": 0
       }
+    },
+    "details": {
+        "type": "product-plus-filter-details",
+        "settings": {}
     }
   },
   "order": [
@@ -99,6 +103,7 @@
     "16613506248d67d803",
     "specs",
     "aqis",
-    "1661394550068ebcef"
+    "1661394550068ebcef",
+    "details"
   ]
 }
