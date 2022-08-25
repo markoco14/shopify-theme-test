@@ -1,0 +1,157 @@
+<div class="footer-container">
+    <div style="background-color: #33c9d3;">
+        <div class="footer-follow-us">
+            <p style="margin: 0;">FOLLOW US</p>
+        </div>
+    </div>
+    <div class="footer-content">
+        <div class="footer-grid">
+            <article class="wynd-apple-container">
+                <span style="display: flex; align-items: center;">
+                    <a href="/" style="display: flex; align-items: center;">
+                        WYND
+                        <img 
+                        style="transform: rotate(90deg); margin-left: -1.5rem;"
+                        width="100" 
+                        height="100" 
+                        src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND-Plus_High-Airflow.png?v=1661451168"
+                        />
+                    </a>
+                </span>
+                <p>Wynd is available at your local Apple store and at <a herf="#">Apple.com</a></p>
+            </article>
+            <div class="footer-link-columns">
+                <article>
+                    <h3 class="footer-column-headings">Main Menu</h3>
+                    <ul class="footer-link-columns-lists">
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Press</li>
+                        <li>Distribution</li>
+                        <li>Jobs</li>
+                        <li>Air Bubbles</li>
+                        <li>Where To Buy</li>
+                        <li>Customization</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3 class="footer-column-headings">Service</h3>
+                    <ul class="footer-link-columns-lists">
+                        <li>Product Help</li>
+                        <li>FAQ</li>
+                        <li>Shipping</li>
+                        <li>Contact</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3 class="footer-column-headings">Social</h3>
+                    <ul class="footer-link-columns-lists">
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
+                        <li>Twitter</li>
+                        <li>YouTube</li>
+                        <li>Email</li>
+                    </ul>
+                </article>
+            </div>
+            <article class="footer-right-column">
+                <p>
+                    Sign up to our mailing list to receive
+                    exclusive offers, updates, and more:
+                </p>
+                <div class="input-group" style="display: flex; justify-content: left; gap: 0;">
+                    <input placeholder="Email">
+                    <span class="footer-sub-btn-group">
+                        Subscribe
+                    </span>
+                </div>
+            </article>
+        </div>
+    </div>
+    <p class="footer-copyright">Copy C 2020 Wynd Technologies, Inc. Privacy Policy</p>
+</div>
+    
+
+{% schema %}
+    {
+        "name": "Plus Footer",
+        "settings": []
+    }
+{% endschema %}
+
+{% stylesheet %}
+
+    .footer-container {
+        color: white;
+        background-color: #060505;
+        margin-top: 0;
+        padding: 0 0 200px;
+    }
+
+    .footer-follow-us {
+        width: min(1400px, 90%); 
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+
+    .footer-content {
+        width: min(1400px, 90%); 
+        margin: 0 auto;
+        padding: 5rem 0;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+    }
+
+    .wynd-apple-container > span > a {
+        color: white;
+        text-decoration: none;
+        font-size:2.5em;
+        font-weight:400;
+    }
+
+    .footer-link-columns {
+        display: flex;
+        justify-content:space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .footer-column-headings {
+        color: white;
+    }
+
+    .footer-link-columns-lists {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-right-column {
+        padding-left: 5rem;
+    }
+
+    .input-group {
+        display: table;
+        border-collapse: initial;
+    }
+
+    .footer-sub-btn-group {
+        padding: 0.5em 1em;
+        background-color: #33c9d3;
+        color: white;
+        border-radius: 0 5px 0 0 / 0 0 0 0;
+        border:none;
+        display: table;
+    }
+
+    .footer-copyright {
+        width: 30%;
+        margin: 0 auto;
+        border-top: 1px solid white;
+        text-align: center;
+        padding: 1rem 0;
+    }
+{% endstylesheet %}
