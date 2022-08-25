@@ -104,6 +104,11 @@
       "type": "product-plus-spec-benefits",
       "settings": {
       }
+    },
+    "parallax": {
+      "type": "product-plus-parallax",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -117,6 +122,7 @@
     "1661394550068ebcef",
     "details",
     "subSave",
-    "specs"
+    "specs",
+    "parallax"
   ]
 }
