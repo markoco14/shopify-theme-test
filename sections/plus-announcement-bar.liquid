@@ -1,0 +1,23 @@
+<div class="announcement-container">
+    <p>FREE SHIPPING ON US ORDERS</p>
+</div>
+
+{% schema %}
+  {
+    "name": "Shipping Announcement",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .announcement-container {
+    background-color: #33c9d3;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .announcement-container > p {
+    margin: 0;
+    color: white;
+  }
+{% endstylesheet %}
