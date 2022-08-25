@@ -302,7 +302,6 @@
     btn.addEventListener('mouseover', () => {
       aqiButtons.forEach((btn, btnIndex) => {
         if (btnIndex === index) {
-          console.log(btn);
           btn.classList.remove(...btn.classList);
           activeClasses[btnIndex].forEach(className => {
             btn.classList.add(className);
