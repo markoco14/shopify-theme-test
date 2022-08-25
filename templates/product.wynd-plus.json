@@ -59,6 +59,36 @@
       "type": "product-plus-aqi-categories",
       "settings": {
       }
+    },
+    "1661394550068ebcef": {
+      "type": "rich-text",
+      "blocks": {
+        "16613945506c6cecc2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>We Filter The Bad Stuff In Your Air<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "16613945506c6cecc2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our medical grade filters are approved for use in US hospitals<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16613945506c6cecc2-0",
+        "16613945506c6cecc2-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -68,6 +98,7 @@
     "usage",
     "16613506248d67d803",
     "specs",
-    "aqis"
+    "aqis",
+    "1661394550068ebcef"
   ]
 }
