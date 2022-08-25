@@ -2,6 +2,7 @@
   <img 
     width="100%"
     height="500px"
+    class="parallax-image"
     src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND_Plus_Parallax_desktop.jpg?v=1661417698" 
     alt="A couch with Wynd Plus purifying the air/"
   />
@@ -18,6 +19,10 @@
 {% stylesheet %}
   .parallax-container {
     max-height:500px;
+    object-fit: cover;
+  }
+
+  .parallax-image {
     object-fit: cover;
   }
 {% endstylesheet %}
