@@ -95,6 +95,11 @@
       "settings": {
       }
     },
+    "subSave": {
+      "type": "product-plus-sub-and-save",
+      "settings": {
+      }
+    },
     "specs": {
       "type": "product-plus-spec-benefits",
       "settings": {
@@ -111,6 +116,7 @@
     "aqis",
     "1661394550068ebcef",
     "details",
+    "subSave",
     "specs"
   ]
 }
