@@ -97,7 +97,8 @@
     },
     "specs": {
       "type": "product-plus-spec-benefits",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [
