@@ -24,7 +24,7 @@
     <li class="aqi-description show">
       <div class="aqi-description-content">
         <p style="color: var(--good);">AQI 0-50</p>
-        <p>GOOD</p>
+        <p class="aqi-level-text">GOOD</p>
         <p>Air quality is considered satisfactory, and air pollution poses little or no risk.</p>  
       </div>
       <div class="aqi-image">
@@ -37,7 +37,7 @@
     <li class="aqi-description hide">
       <div class="aqi-description-content">
         <p style="color: var(--moderate);">AQI 51-100</p>  
-        <p>MODERATE</p>  
+        <p class="aqi-level-text">MODERATE</p>  
         <p>Air quality is acceptable: however, for some pollutants 
           there may be a moderate health concern for a very small 
           number of people who are unusually sensitive to air pollution.
@@ -53,7 +53,7 @@
     <li class="aqi-description hide">
       <div class="aqi-description-content">
         <p style="color: var(--sensitive);">AQI 101-150</p>  
-        <p>UNHEALTHY FOR SENSITIVE GROUPS</p>  
+        <p class="aqi-level-text">UNHEALTHY FOR SENSITIVE GROUPS</p>  
         <p>Members of sensitive groups may experience health effects. The general public is not likely to be affected.</p>  
       </div>
       <div class="aqi-image">
@@ -66,7 +66,7 @@
     <li class="aqi-description hide">
       <div class="aqi-description-content">
         <p style="color: var(--unhealthy);">AQI 151-200</p>  
-        <p>UNHEALTHY</p>  
+        <p class="aqi-level-text">UNHEALTHY</p>  
         <p>Everyone may begin to experience health effects, members of sensitive groups may experience more serious health effects.</p>  
       </div>
       <div class="aqi-image">
@@ -79,7 +79,7 @@
     <li class="aqi-description hide">
       <div class="aqi-description-content">
         <p style="color: var(--very-unhealthy);">AQI 201-300</p>  
-        <p>VERY UNHEALTHY</p>  
+        <p class="aqi-level-text">VERY UNHEALTHY</p>  
         <p>Health alert: everyone may experience more serious health effects.</p>  
       </div>
       <div class="aqi-image">
@@ -92,7 +92,7 @@
     <li class="aqi-description hide">
       <div class="aqi-description-content">
         <p style="color: var(--hazardous);">AQI 301-500</p>  
-        <p>HAZARDOUS</p>  
+        <p class="aqi-level-text">HAZARDOUS</p>  
         <p>Health warnings of emergency conditions. The entire population is more likely to be affected.</p>  
       </div>
       <div class="aqi-image">
@@ -141,10 +141,6 @@
     border-radius: 25px;
     flex: 1 1 0;
     width: 0;
-  }
-  .btn-text {
-    text-align: center;
-    margin: 0 auto;
   }
   
   .good {
@@ -256,7 +252,7 @@
   .hazardous:hover {
     cursor: pointer;
   }
-  
+
   .hazardous-active:hover {
     cursor: pointer;
   }
@@ -267,6 +263,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+  }
+
+  .aqi-level-text {
+    font-size:2em;
+    font-weight: 550;
   }
 
   .aqi-image {
