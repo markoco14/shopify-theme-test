@@ -1,4 +1,37 @@
-<h2>Hello from Sub and Save</h2>
+<div class="sub-save-container">
+  <div class="sub-save-content-wrapper">
+    <h2 class="sub-save-heading">Subscribe and Save on Filters</h2>
+    <p>Subscribe and get a new filter automatically delivered 
+      to your door every 3 months for only $22 (Usually $29)
+    </p>
+    <div class="sub-save-flex">
+      <div class="sub-save-flex-item">
+        <img 
+          width="100%"
+          src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND-Plus_20_7790e9c2-22e5-465f-8882-084befe68272.png?v=1661417546" 
+          alt=""
+        >
+        <p>Discount on Replacement Filters</p>
+      </div>
+      <div class="sub-save-flex-item">
+        <img 
+          width="100%"
+          src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND-Plus_100days.png?v=1661417546" 
+          alt=""
+        >
+        <p>Free Shipping* on Filter Replacements</p>
+      </div>
+      <div class="sub-save-flex-item">
+        <img 
+          width="100%"
+          src="https://cdn.shopify.com/s/files/1/0622/1715/8830/files/WYND-Plus_Extended-warranty.png?v=1661417546" 
+          alt=""
+        >
+        <p>Lifetime Device Warranty</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% schema %}
   {
@@ -8,6 +41,33 @@
 {% endschema %}
 
 {% stylesheet %}
+
+  .sub-save-container {
+    background-color: #33c9d3;
+    color: white;
+    padding: 2rem 0
+  }
+
+  .sub-save-content-wrapper {
+    width: min(800px, 90%);
+    margin: auto;
+    text-align: center;
+  }
+
+  .sub-save-heading {
+    color: white;
+    font-size: 2.5em;
+    margin: 0;
+  }
+  .sub-save-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .sub-save-flex-item {
+    max-width: 250px;
+  }
 {% endstylesheet %}
 
 {% javascript %}
