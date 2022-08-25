@@ -50,8 +50,8 @@
         "padding_bottom": 52
       }
     },
-    "specs": {
-      "type": "product-plus-specs",
+    "measurements": {
+      "type": "product-plus-measurements",
       "settings": {
       }
     },
@@ -102,7 +102,7 @@
     "howTo",
     "usage",
     "16613506248d67d803",
-    "specs",
+    "measurements",
     "aqis",
     "1661394550068ebcef",
     "details"
